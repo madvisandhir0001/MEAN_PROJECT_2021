@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{
+  margin:0;
+}
+.header {
+  background-color: #d6f5d6;
+  padding: 10px;
+  font-size: 25px;
+  text-align: center;
+  color: black;
+}
+/*pictures satyling*/
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  display: inline-block;
+  margin:10px 10px 10px 10px;
+}
+#myImg:hover {opacity: 0.5;}
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1;
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.9);
+}
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+.heading{
+  text-align:center;
+  font-size: 40px; 
+}
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+/*pictures satyling end*/
+</style>
+</head>
+<body>
+	<div class="header">
+  <h2>BEDROOM LOOKS</h2>
+</div>
+<!---pictures satyling-->
+<img id="myImg" src="56.jpg" alt="Snow" style="width:100%;max-width:420px">
+<img id="myImg" src="57.jpg" alt="Snow" style="width:100%;max-width:420px">
+<img id="myImg" src="58.jpg" alt="Snow" style="width:100%;max-width:420px">
+<img id="myImg" src="59.jpg" alt="Snow" style="width:100%;max-width:420px">
+<img id="myImg" src="60.jpg" alt="Snow" style="width:100%;max-width:420px">
+<img id="myImg" src="61.jpg" alt="Snow" style="width:100%;max-width:420px">
+<img id="myImg" src="62.jpg" alt="Snow" style="width:100%;max-width:420px">
+<img id="myImg" src="63.jpg" alt="Snow" style="width:100%;max-width:420px">
+<img id="myImg" src="64.jpg" alt="Snow" style="width:100%;max-width:420px">
+<img id="myImg" src="65.jpg" alt="Snow" style="width:100%;max-width:420px">
+<img id="myImg" src="66.jpg" alt="Snow" style="width:100%;max-width:420px">
+<img id="myImg" src="67.jpg" alt="Snow" style="width:100%;max-width:420px">
+<img id="myImg" src="68.jpg" alt="Snow" style="width:100%;max-width:420px">
+<img id="myImg" src="69.jpg" alt="Snow" style="width:100%;max-width:420px">
+<img id="myImg" src="70.jpg" alt="Snow" style="width:100%;max-width:420px">
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+<script>
+var modal = document.getElementById("myModal");
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+var span = document.getElementsByClassName("close")[0];
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+<!---pictures satyling end-->
+</body>
+</html>

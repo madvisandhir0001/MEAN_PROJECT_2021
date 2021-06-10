@@ -12,7 +12,7 @@ var corsOptions = {
   origin: "http://localhost:8081"
 };
 
-app.use(cors(corsOptions));
+app.use(cors());
 
 // parse requests of content-type - application/json
 app.use(bodyParser.json());
@@ -33,7 +33,7 @@ require('./app/routes/auth.routes')(app);
 require('./app/routes/user.routes')(app);
 
 app.use(function(req, res) {
-  res.sendfile(__dirname + '/app/views/index.html');
+  res.sendFile(__dirname + '/app/views/index.html');
 });
 
 // set port, listen for requests

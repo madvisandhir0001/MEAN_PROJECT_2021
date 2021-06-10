@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body{
+  margin:0;
+}  
+* {
+  box-sizing: border-box;
+}
+.container {
+  position: relative;
+  max-width: 100%;
+  margin: 0 ;
+}
+.content{
+  text-align: center;
+}
+.container img {vertical-align: middle;}
+.container .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); 
+  background: rgba(0, 0, 0, 0.5); 
+  color: #f1f1f1;
+  width: 100%;
+  padding: 13px;
+}
+.safe {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin: 0;
+}
+.button {
+ text-align: center;
+ display: inline-block;
+ padding-right: 20px;
+}
+.btn{
+  text-decoration: none;
+  border-color: #FFA500;
+  background-color: #FFA500;
+  border-radius: 24px;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 36px;
+  color: black;
+}
+.btn:hover{
+ color:red; 
+float:left;
+}
+.head11{
+  font-size: 35px;
+  font-weight: bold;
+}
+.mySlides {display:none;}
+.headings{
+  color: #ff9900;
+  font-weight: bold;
+  font-size: 40px;
+  font-family: 'Abril Fatface'
+}
+.data{
+  font-size: 20px;
+  font-family: 'Aleo'
+  font-weight:800;
+  color: white;
+}
+.w3-container-1{
+  background-color:#1a1a1a ;
+  width: 90%;
+  margin-left: 70px;
+  border-radius: 5px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+#but{
+  font-weight: bold;
+  font-size: 15px;
+  background-color: #00394d;
+  border-radius: 15px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <img src="25.jpg" alt="Notebook" style="width:100%;">
+  <div class="safe"><img  src="106.png">
+  </div>
+  <div class="content">
+    <h1 class="head11">YOUR DREAM HOME IS IN SAFE HANDS</h1>
+  </div>
+</div>
+
+<div class="w3-container-1">
+  <h2 class="headings">The green zone of home interiors</h2>
+  <p class="data">Building a safer environment for you, our vendors, and our employees is our biggest priority. From our Experience Centres to our warehouses, and from our factories to your new homes, we are following strict safety protocols to make it a green zone for you.</p>
+</div>
+<br>
+<div class="w3-content w3-display-container">
+<div class="w3-display-container mySlides">
+  <img src="105.jpg" style="width:100%">
+  <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+    Temperature check for everyone.
+  </div>
+</div>
+<div class="w3-display-container mySlides">
+  <img src="110.jpg" style="width:100%">
+  <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+    Strict use of masks, gloves and sanitizers.
+  </div>
+</div>
+<div class="w3-display-container mySlides">
+  <img src="107.jpg" style="width:100%">
+  <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+    Floor marking as per social distancing protocols.
+  </div>
+</div>
+<div class="w3-display-container mySlides">
+  <img src="108.jpg" style="width:100%">
+  <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+    Regular sanitization of all premises, samples and raw materils.
+  </div>
+</div>
+<div class="w3-display-container mySlides">
+  <img src="109.jpg" style="width:100%">
+  <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+    Contactless and safe design meetings.
+  </div>
+</div>
+<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+</div>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+<br>
+<br>
+
+<div class="container">
+  <img src="111.jpg" alt="Notebook" style="width:100%;">
+  
+  <div class="content">
+    <h1 class="head11">YOUR DREAM HOME is just a click away.</h1>
+        <div class="button">
+      <p><button class="w3-button w3-block" id="but">
+       CONSULT NOW <br> <i class="fa fa-envelope"></i>
+      </button></p>
+     </div>
+  </div>
+
+
+</div>
+
+
+</body>
+</html>

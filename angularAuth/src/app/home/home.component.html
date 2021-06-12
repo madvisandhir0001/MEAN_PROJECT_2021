@@ -10,105 +10,17 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <body>
 
-  <!--covid update-->
-  <div class="top-container">
-  <ul>
-  <li>COVID-19 Update:Here's how we ensure a safe home interior experience.<a href="../assets/images/covid.html" class="read">Read more &#8594;</a><span class="close">&times;</span></li>
-  </ul>
-  </div>
-  <script>
-  var closebtns = document.getElementsByClassName("close");
-  var i;
-  for (i = 0; i < closebtns.length; i++) {
-    closebtns[i].addEventListener("click", function() {
-      this.parentElement.style.display = 'none';
-    });
-  }
-  </script>
 
-<section id="navbar">
-  <div class="header" id="myHeader">
-  <div class="navbar">
-    <img class="heading" src="../assetsimages/167.png">
-    <div class="dropdown">
-      <button class="dropbtn">Looks
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-      <a href="../assets/images/modular kitchen.html"><img class="image" src="../assets/images/13.jpg" width="180px" height="100px"><br><p class="bar"routerlink="modular kitchen">Modular Kitchens</p></a>
-       <a href="../assets/images/living room.html"><img class="image"src="../assets/images/6.jpg" width="180px" height="100px"><br><p class="bar"routerLink="">Living Rooms</p></a>
-       <a href="../assets/images/bedrooms.html"><img class="image" src="../assets/images/68.jpg" width="180px" height="100px"><br><p class="bar">Bedrooms</p></a>
-       <a href="../assets/images/kids room.html"><img class="image" src="../assets/images/17.jpg" width="180px" height="100px"><br><p class="bar">Kid's Room</p></a>
-       <a href="../assets/images/wardrobes.html"><img class="image" src="../assets/images/100.jpg" width="180px" height="100px"><br><p class="bar">Modular Wardrobes</p></a>
-      </div>
-    </div>
-    <a href="#aboutus">About Us</a>
-  <a href="#services">Services</a>
-  <a href="#portfolio">Portfolio</a>
-  <div class="dropdown">
-      <button class="dropbtn">Pricing
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-      <a href="#commercial"><img class="image" src="../assets/images/102.jpg" width="180px" height="100px"><br><p class="bar">Commercial</p></a>
-        <a href="#residential"><img class="image"  src="../assets/images/103.jpg" width="180px" height="100px"><br><p class="bar">Residential</p></a>
-        <a href="#professional"><img class="image" src="../assets/images/104.jpg" width="180px" height="100px"><br><p class="bar">Professional</p></a>
-      </div>
-    </div>
-  <a href="#team">Our Team</a>
-  <a href="#feedback">Feedback</a>
-  <div class="button">
-       </div>
-  </div>
-  </div>
-  <script>
-  window.onscroll = function() {myFunction()};
 
-  var header = document.getElementById("myHeader");
-  var sticky = header.offsetTop;
 
-  function myFunction() {
-    if (window.pageYOffset > sticky) {
-      header.classList.add("sticky");
-    } else {
-      header.classList.remove("sticky");
-    }
-  }
-  </script>
-  </section>
+  <img src ="../../assets/images/1.jpg" width="100%" />
 
-  <!--navbar end-->
 
-<!--slider-->
 
- <div class="w3-content w3-section" style="max-width:1400px">
-  <img class="mySlides w3-animate-top" src="../assets/images/1.jpg" style="width:1400px" >
-  <img class="mySlides w3-animate-top" src="../assets/images/7.jpg" style="width:1400px" >
-  <img class="mySlides w3-animate-top" src="../assets/images/15.jpg" style="width:1400px"  >
-  <img class="mySlides w3-animate-top" src="../assets/images/5.jpg" style="width:1400px">
-  <img class="mySlides w3-animate-top" src="../assets/images/4.jpg" style="width:1400px" >
-  <img class="mySlides w3-animate-bottom" src="../assets/images/2.jpg" style="width:1400px" >
-  <img class="mySlides w3-animate-top" src="../assets/images/6.jpg" style="width:1400px" >
-  <img class="mySlides w3-animate-top" src="../assets/images/3.jpg" style="width:1400px" >
-  </div>
-  <script>
-  var myIndex = 0;
-  carousel();
-  function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}
-    x[myIndex-1].style.display = "block";
-    setTimeout(carousel, 2500);
-  }
-  </script>
-  <!--slider end-->
+
 
 <!--who we are-->
+<section id="aboutus">
 <ng-container  id ="aboutus">
   <div class="w3-container w3-" style="padding: 80px 40px" >
     <div class="w3-row-padding">
@@ -279,6 +191,7 @@
   <!-- portfolio end -->
 
   <!---pricing commercial -->
+<section id="pricing">
 <section id ="commercial">
   <div class="w3-container w3-light-grey" style="padding:60px 35px">
     <div class="w3-row-padding">
@@ -331,6 +244,7 @@
     </div>
 
    <!---pricing professional end-->
+
 
    <!---our team--->
 <section id="team">
